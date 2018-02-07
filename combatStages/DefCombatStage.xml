@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataLink fields="{'pokeCmbtStgDef', 'pokeDefenseBase', 'pokeDefenseProg', 'pokeNatureDef'}">
+  <event name="onChange">
+    if (sheet.pokeCmbtStgDef == "0") then
+    sheet.pokeCmbtStgDefVlr = 0.4;
+    elseif (sheet.pokeCmbtStgDef == "1") then
+    sheet.pokeCmbtStgDefVlr = 0.5;
+    elseif (sheet.pokeCmbtStgDef == "2") then
+    sheet.pokeCmbtStgDefVlr = 0.6;
+    elseif (sheet.pokeCmbtStgDef == "3") then
+    sheet.pokeCmbtStgDefVlr = 0.7;
+    elseif (sheet.pokeCmbtStgDef == "4") then
+    sheet.pokeCmbtStgDefVlr = 0.8;
+    elseif (sheet.pokeCmbtStgDef == "5") then
+    sheet.pokeCmbtStgDefVlr = 0.9;
+    elseif (sheet.pokeCmbtStgDef == "6") then
+    sheet.pokeCmbtStgDefVlr = 1;
+    elseif (sheet.pokeCmbtStgDef == "7") then
+    sheet.pokeCmbtStgDefVlr = 1.2;
+    elseif (sheet.pokeCmbtStgDef == "8") then
+    sheet.pokeCmbtStgDefVlr = 1.4;
+    elseif (sheet.pokeCmbtStgDef == "9") then
+    sheet.pokeCmbtStgDefVlr = 1.6;
+    elseif (sheet.pokeCmbtStgDef == "10") then
+    sheet.pokeCmbtStgDefVlr = 1.8;
+    elseif (sheet.pokeCmbtStgDef == "11") then
+    sheet.pokeCmbtStgDefVlr = 2;
+    elseif (sheet.pokeCmbtStgDef == "12") then
+    sheet.pokeCmbtStgDefVlr = 2.2;
+    end;
+	sheet.pokeDefense = math.floor(((sheet.pokeDefenseBase or 1) + (sheet.pokeDefenseProg or 0) + (sheet.pokeNatureDef or 0)) * (sheet.pokeCmbtStgDefVlr or 1));
+    sheet.pokeEvasionPhysic = math.floor((sheet.pokeDefense * (sheet.pokeCmbtStgDefVlr or 1))/5);
+  </event>
+</dataLink>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataLink fields="{'pokeCmbtStgSpAtk', 'pokeSpAttackBase', 'pokeSpAttackProg', 'pokeNatureSpAtk'}">
+  <event name="onChange">
+    if (sheet.pokeCmbtStgSpAtk == "0") then
+    sheet.pokeCmbtStgSpAtkVlr = 0.4;
+    elseif (sheet.pokeCmbtStgSpAtk == "1") then
+    sheet.pokeCmbtStgSpAtkVlr = 0.5;
+    elseif (sheet.pokeCmbtStgSpAtk == "2") then
+    sheet.pokeCmbtStgSpAtkVlr = 0.6;
+    elseif (sheet.pokeCmbtStgSpAtk == "3") then
+    sheet.pokeCmbtStgSpAtkVlr = 0.7;
+    elseif (sheet.pokeCmbtStgSpAtk == "4") then
+    sheet.pokeCmbtStgSpAtkVlr = 0.8;
+    elseif (sheet.pokeCmbtStgSpAtk == "5") then
+    sheet.pokeCmbtStgSpAtkVlr = 0.9;
+    elseif (sheet.pokeCmbtStgSpAtk == "6") then
+    sheet.pokeCmbtStgSpAtkVlr = 1;
+    elseif (sheet.pokeCmbtStgSpAtk == "7") then
+    sheet.pokeCmbtStgSpAtkVlr = 1.2;
+    elseif (sheet.pokeCmbtStgSpAtk == "8") then
+    sheet.pokeCmbtStgSpAtkVlr = 1.4;
+    elseif (sheet.pokeCmbtStgSpAtk == "9") then
+    sheet.pokeCmbtStgSpAtkVlr = 1.6;
+    elseif (sheet.pokeCmbtStgSpAtk == "10") then
+    sheet.pokeCmbtStgSpAtkVlr = 1.8;
+    elseif (sheet.pokeCmbtStgSpAtk == "11") then
+    sheet.pokeCmbtStgSpAtkVlr = 2;
+    elseif (sheet.pokeCmbtStgSpAtk == "12") then
+    sheet.pokeCmbtStgSpAtkVlr = 2.2;
+    end;
+	sheet.pokeSpAttack = math.floor(((sheet.pokeSpAttackBase or 1) + (sheet.pokeSpAttackProg or 0) + (sheet.pokeNatureSpAtk or 0)) * (sheet.pokeCmbtStgSpAtkVlr or 1));
+	sheet.pokeDamageSpecial = sheet.pokeSpAttack;
+  </event>
+</dataLink>

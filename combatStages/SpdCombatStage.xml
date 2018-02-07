@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataLink fields="{'pokeCmbtStgSpd', 'pokeSpeedBase', 'pokeSpeedProg', 'pokeNatureSpd'}">
+  <event name="onChange">
+    if (sheet.pokeCmbtStgSpd == "0") then
+    sheet.pokeCmbtStgSpdVlr = 0.4;
+    elseif (sheet.pokeCmbtStgSpd == "1") then
+    sheet.pokeCmbtStgSpdVlr = 0.5;
+    elseif (sheet.pokeCmbtStgSpd == "2") then
+    sheet.pokeCmbtStgSpdVlr = 0.6;
+    elseif (sheet.pokeCmbtStgSpd == "3") then
+    sheet.pokeCmbtStgSpdVlr = 0.7;
+    elseif (sheet.pokeCmbtStgSpd == "4") then
+    sheet.pokeCmbtStgSpdVlr = 0.8;
+    elseif (sheet.pokeCmbtStgSpd == "5") then
+    sheet.pokeCmbtStgSpdVlr = 0.9;
+    elseif (sheet.pokeCmbtStgSpd == "6") then
+    sheet.pokeCmbtStgSpdVlr = 1;
+    elseif (sheet.pokeCmbtStgSpd == "7") then
+    sheet.pokeCmbtStgSpdVlr = 1.2;
+    elseif (sheet.pokeCmbtStgSpd == "8") then
+    sheet.pokeCmbtStgSpdVlr = 1.4;
+    elseif (sheet.pokeCmbtStgSpd == "9") then
+    sheet.pokeCmbtStgSpdVlr = 1.6;
+    elseif (sheet.pokeCmbtStgSpd == "10") then
+    sheet.pokeCmbtStgSpdVlr = 1.8;
+    elseif (sheet.pokeCmbtStgSpd == "11") then
+    sheet.pokeCmbtStgSpdVlr = 2;
+    elseif (sheet.pokeCmbtStgSpd == "12") then
+    sheet.pokeCmbtStgSpdVlr = 2.2;
+    end;
+	sheet.pokeSpeed = math.floor(((sheet.pokeSpeedBase or 1) + (sheet.pokeSpeedProg or 0) + (sheet.pokeNatureSpd or 0)) * (sheet.pokeCmbtStgSpdVlr or 1));
+    sheet.pokeEvasionSpeed = math.floor((sheet.pokeSpeed * (sheet.pokeCmbtStgSpdVlr or 1))/5);
+    sheet.pokeInitiative = math.floor(sheet.pokeSpeed  * (sheet.pokeCmbtStgSpdVlr or 1));
+  </event>
+</dataLink>

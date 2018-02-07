@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="frmTutor" height="40" margins="{top=2, right=5, bottom=2}">
+
+  <rectangle align="client" color="transparent" strokeColor="white" strokeSize="1" xradius="10" yradius="10" cornerType="innerLine" strokeDash="dash" margins="{left=5, right=5}">
+
+    <!-- Bloco Horizontal -->
+    <!-- Nome e AC -->
+    <layout align="client" width="290" height="30" margins="{left=5, top=5, bottom=5}">
+      <label text="Item:" width="40" fontSize="12" fontStyle="bold" align="left" margins="{left=5}"/>
+      <rectangle align="left" width="220" color="transparent" strokeColor="white" strokeSize="1" xradius="10" yradius="10" cornerType="bevel" strokeDash="dash" margins="{left=5}">
+        <edit field="tutorItem" align="client" transparent="true" margins="{left=5, right=5}" horzTextAlign="center"/>
+      </rectangle>
+    </layout>
+
+    <layout align="client" width="120" height="50" margins="{left=290, top=5, bottom=5}">
+      <label text="Custo:" width="40" fontSize="12" fontStyle="bold" align="left" margins="{left=5}"/>
+      <rectangle align="left" width="80" color="transparent" strokeColor="white" strokeSize="1" xradius="10" yradius="10" cornerType="bevel" strokeDash="dash" margins="{left=5}">
+        <edit field="tutorCost" align="client" type="number" transparent="true" margins="{left=5,right=5}" horzTextAlign="center"/>
+      </rectangle>
+    </layout>
+    <!-- Fim do Bloco Horizontal -->
+
+  </rectangle>
+
+	<button align="right" text="Apagar" width="60">
+		<event name="onClick">
+		
+		Dialogs.confirmYesNo("Deseja realmente apagar este item?",
+			function (confirmado)
+					if confirmado then
+							ndb.deleteNode(sheet);
+					else
+							-- usuário escolheu NAO
+					end;
+			end);
+		</event>
+	</button>
+	
+</form>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Calculo de Natureza -->
+<dataLink field="pokeNature">
+  <event name="onChange">
+    if (sheet.pokeNature == "1") then
+    sheet.pokeNatureHP = "+1";
+    sheet.pokeNatureAtk = "-2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "2") then
+    sheet.pokeNatureHP = "+1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "-2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "3") then
+    sheet.pokeNatureHP = "+1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "-2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "4") then
+    sheet.pokeNatureHP = "+1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "-2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "5") then
+    sheet.pokeNatureHP = "+1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "-2";
+
+    elseif (sheet.pokeNature == "6") then
+    sheet.pokeNatureHP = "-1";
+    sheet.pokeNatureAtk = "+2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "7") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "+2";
+    sheet.pokeNatureDef = "-2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "8") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "+2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "-2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "9") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "+2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "-2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "10") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "+2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "-2";
+
+    elseif (sheet.pokeNature == "11") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "+2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "12") then
+    sheet.pokeNatureHP = "-1";
+    sheet.pokeNatureAtk = "-2";
+    sheet.pokeNatureDef = "+2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "13") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "+2";
+    sheet.pokeNatureSpAtk = "-2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "14") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "+2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "-2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "15") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "+2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "-2";
+
+    elseif (sheet.pokeNature == "16") then
+    sheet.pokeNatureHP = "-1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "+2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "17") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "-2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "+2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "18") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "-2";
+    sheet.pokeNatureSpAtk = "+2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "19") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "+2";
+    sheet.pokeNatureSpDef = "-2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "2") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "+2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "-2";
+
+    elseif (sheet.pokeNature == "21") then
+    sheet.pokeNatureHP = "-1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "+2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "22") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "-2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "+2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "23") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "-2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "+2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "24") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "-2";
+    sheet.pokeNatureSpDef = "+2";
+    sheet.pokeNatureSpd = "";
+
+    elseif (sheet.pokeNature == "25") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "+2";
+    sheet.pokeNatureSpd = "-2";
+
+
+    elseif (sheet.pokeNature == "26") then
+    sheet.pokeNatureHP = "-1";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "+2";
+
+    elseif (sheet.pokeNature == "27") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "-2";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "+2";
+
+    elseif (sheet.pokeNature == "28") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "-2";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "+2";
+
+    elseif (sheet.pokeNature == "29") then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "-2";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "+2";
+
+    elseif (sheet.pokeNature == 30) then
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "-2";
+    sheet.pokeNatureSpd = "+2";
+
+    else
+    sheet.pokeNatureHP = "";
+    sheet.pokeNatureAtk = "";
+    sheet.pokeNatureDef = "";
+    sheet.pokeNatureSpAtk = "";
+    sheet.pokeNatureSpDef = "";
+    sheet.pokeNatureSpd = "";
+    end;
+
+    sheet.pokePV = math.floor(((sheet.pokeHP or 1) *3) + (sheet.pokeLevel or 1) + (sheet.pokeNatureHP or 0) + 10);
+    sheet.pokeEvasionPhysic = math.floor(((sheet.pokeDeffense or 0) + (sheet.pokeNatureDef or 0))/5);
+    sheet.pokeEvasionSpecial = math.floor(((sheet.pokeSpecialDef or 0) + (sheet.pokeNatureSpDef or 0))/5);
+    sheet.pokeEvasionSpeed = math.floor(((sheet.pokeSpeed or 0) + (sheet.pokeNatureSpd or 0))/5);
+  </event>
+</dataLink>

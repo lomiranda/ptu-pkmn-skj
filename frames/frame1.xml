@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<frame autoScaleX="true" autoScaleY="true" width="200" height="200">
+  <borders left="1.0" top="1.0" right="1.0" bottom="1.0"/>
+  <draw>
+    <image left="10" top="10" right="0" bottom="0">
+      <source left="10" top="10" right="10" bottom="10" url="http://rrpg.com.br/sdk3/lib/NewItem129.png"/>
+    </image>
+  </draw>
+</frame>
